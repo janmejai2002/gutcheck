@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gutcheck"
+version = "0.1.0"
+description = "Fast, calibrated System-1 decisions (choice / score / yes-no) on your NPU, GPU or CPU. Jev-compatible API, MCP server, fine-tuning, and token-saving skill/tool leasing for AI agents."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{ name = "gutcheck contributors" }]
+keywords = ["npu", "openvino", "classification", "agents", "mcp", "jev", "laya", "system-1", "llm-routing", "ai-pc"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Programming Language :: Python :: 3",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+]
+dependencies = [
+  "openvino>=2025.3",
+  "tokenizers>=0.20",
+  "numpy>=1.24",
+  "huggingface_hub>=0.25",
+]
+
+[project.optional-dependencies]
+export = ["torch>=2.4", "transformers>=4.48", "safetensors>=0.4", "nncf>=2.14"]
+onnx = ["onnxruntime>=1.20", "onnxscript>=0.1"]   # NVIDIA: onnxruntime-gpu; Snapdragon: onnxruntime-qnn
+train = ["torch>=2.4", "transformers>=4.48", "safetensors>=0.4", "nncf>=2.14"]
+mcp = ["mcp>=1.2"]
+all = ["gutcheck[export,mcp]"]
+dev = ["pytest>=8", "gutcheck[all]"]
+
+[project.scripts]
+gutcheck = "gutcheck.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/janmejai2002/gutcheck"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gutcheck"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["model: needs a real model package (slow; set GUTCHECK_TEST_MODEL=1)"]

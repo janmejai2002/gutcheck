@@ -1,0 +1,65 @@
+{
+  "split": "test",
+  "n": 229,
+  "router": "laya-en",
+  "mode": "choice",
+  "device": "GPU",
+  "catalog_items": 110,
+  "catalog_tokens": 25950,
+  "shortlist_recall_at": {
+    "1": 0.758,
+    "3": 0.923,
+    "5": 0.944,
+    "8": 0.977
+  },
+  "latency_ms_p50": 45.1,
+  "latency_ms_p90": 48.9,
+  "by_threshold": [
+    {
+      "threshold": 0.2,
+      "precision": 0.7368421052631579,
+      "recall": 0.6470588235294118,
+      "reachable_recall": 0.9537815126050421,
+      "prompts_fully_covered": 0.7030567685589519,
+      "silent_when_nothing_needed": 0.6571428571428571,
+      "avg_tokens": 238.5414847161572,
+      "none_silence": null,
+      "saved_pct": 99.08076499145989
+    }
+  ],
+  "with_none_silence": [
+    {
+      "threshold": 0.2,
+      "precision": 0.7368421052631579,
+      "recall": 0.6470588235294118,
+      "reachable_recall": 0.8781512605042017,
+      "prompts_fully_covered": 0.7030567685589519,
+      "silent_when_nothing_needed": 0.6571428571428571,
+      "avg_tokens": 232.16593886462883,
+      "none_silence": 0.5,
+      "saved_pct": 99.10533356892243
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.7368421052631579,
+      "recall": 0.6470588235294118,
+      "reachable_recall": 0.8781512605042017,
+      "prompts_fully_covered": 0.7030567685589519,
+      "silent_when_nothing_needed": 0.6571428571428571,
+      "avg_tokens": 232.46724890829694,
+      "none_silence": 0.6,
+      "saved_pct": 99.10417245122044
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.7368421052631579,
+      "recall": 0.6470588235294118,
+      "reachable_recall": 0.8907563025210085,
+      "prompts_fully_covered": 0.7030567685589519,
+      "silent_when_nothing_needed": 0.6571428571428571,
+      "avg_tokens": 233.36244541484717,
+      "none_silence": 0.7,
+      "saved_pct": 99.10072275370001
+    }
+  ]
+}

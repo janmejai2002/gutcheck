@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+scratch/
+data/**/raw_*.jsonl
+data/**/*_raw*.jsonl
+*.log
+
+# local-only: machine-specific notes and personal report
+CLAUDE.md
+docs/report.html

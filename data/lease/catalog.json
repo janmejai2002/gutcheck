@@ -1,0 +1,772 @@
+[
+ {
+  "id": "skill-docx",
+  "kind": "skill",
+  "name": "docx",
+  "description": "Generates, inspects, and refactors Microsoft Word (.docx) documents with styling, tables, and tracked changes. Use when creating formal corporate reports, proposals, or editing existing Word files.",
+  "token_cost": 95
+ },
+ {
+  "id": "skill-pdf",
+  "kind": "skill",
+  "name": "pdf",
+  "description": "Extracts text, parses tabular data, and manipulates local PDF documents or generates print-ready PDFs. Use when reading local PDF specifications, extracting invoice data, or compiling documents to PDF.",
+  "token_cost": 110
+ },
+ {
+  "id": "skill-pptx",
+  "kind": "skill",
+  "name": "pptx",
+  "description": "Builds and edits PowerPoint presentations (.pptx) with structured slide layouts, speaker notes, and custom color themes. Use when producing technical briefing decks or investor pitch presentations.",
+  "token_cost": 105
+ },
+ {
+  "id": "skill-xlsx",
+  "kind": "skill",
+  "name": "xlsx",
+  "description": "Analyzes, formulas, and modifies Excel spreadsheets (.xlsx) with multi-sheet calculations and cell styling. Use when calculating financial models, tabular projections, or auditing local spreadsheets.",
+  "token_cost": 115
+ },
+ {
+  "id": "skill-skill-creator",
+  "kind": "skill",
+  "name": "skill-creator",
+  "description": "Scaffolds new agent skills conforming to the SKILL.md specification with structured frontmatter, instructions, and scripts. Use when creating custom reusable capabilities or packaging recurring agent routines.",
+  "token_cost": 85
+ },
+ {
+  "id": "skill-frontend-design",
+  "kind": "skill",
+  "name": "frontend-design",
+  "description": "Enforces modern visual hierarchy, responsive layout tokens, micro-interactions, and accessible typography in web applications. Use when styling new components, refining page aesthetics, or avoiding generic AI layouts.",
+  "token_cost": 140
+ },
+ {
+  "id": "skill-webapp-testing",
+  "kind": "skill",
+  "name": "webapp-testing",
+  "description": "Provides strategies and assertions for end-to-end and component integration tests using Vitest, Cypress, or Playwright. Use when scaffolding test suites, writing smoke tests, or debugging flaky UI tests.",
+  "token_cost": 125
+ },
+ {
+  "id": "skill-mcp-builder",
+  "kind": "skill",
+  "name": "mcp-builder",
+  "description": "Designs and writes Model Context Protocol servers in TypeScript or Python following JSON-RPC 2.0 standards. Use when exposing custom APIs, internal databases, or local CLIs as agent-compatible tool servers.",
+  "token_cost": 130
+ },
+ {
+  "id": "skill-canvas-design",
+  "kind": "skill",
+  "name": "canvas-design",
+  "description": "Guides HTML5 Canvas and WebGL 2D/3D procedural rendering, interactive graphics, and generative visuals. Use when implementing custom charts, interactive animations, or canvas-based simulation views.",
+  "token_cost": 120
+ },
+ {
+  "id": "skill-brand-guidelines",
+  "kind": "skill",
+  "name": "brand-guidelines",
+  "description": "Audits visual assets, marketing copy, and UI palettes against established organizational branding tokens and voice guidelines. Use when verifying design consistency across public-facing artifacts.",
+  "token_cost": 90
+ },
+ {
+  "id": "skill-internal-comms",
+  "kind": "skill",
+  "name": "internal-comms",
+  "description": "Drafts crisp organizational memos, executive project updates, and company-wide sync announcements. Use when communicating architectural decisions, team milestones, or policy changes internally.",
+  "token_cost": 80
+ },
+ {
+  "id": "skill-changelog-generator",
+  "kind": "skill",
+  "name": "changelog-generator",
+  "description": "Parses git commit logs, merged PR descriptions, and semantic version bumps into user-facing release notes. Use when preparing release milestones, drafting GitHub releases, or summarizing sprint deployments.",
+  "token_cost": 95
+ },
+ {
+  "id": "skill-git-commit-helper",
+  "kind": "skill",
+  "name": "git-commit-helper",
+  "description": "Crafts conventional commit messages and atomic staging plans based on staged repository diffs. Use when organizing multi-file changes into clean, reviewable commits prior to pushing.",
+  "token_cost": 75
+ },
+ {
+  "id": "skill-code-review",
+  "kind": "skill",
+  "name": "code-review",
+  "description": "Analyzes unified git diffs for correctness, concurrency edge cases, readability, and performance regressions. Use when conducting inline code reviews or validating changes before opening a PR.",
+  "token_cost": 135
+ },
+ {
+  "id": "skill-tdd",
+  "kind": "skill",
+  "name": "tdd",
+  "description": "Guides the red-green-refactor cycle by requiring failing test cases prior to implementing application code. Use when tackling mission-critical business logic or writing bug reproduction harnesses.",
+  "token_cost": 110
+ },
+ {
+  "id": "skill-debugging",
+  "kind": "skill",
+  "name": "debugging",
+  "description": "Provides systematic root-cause analysis workflows, log correlation techniques, and bisect strategies for complex failures. Use when diagnosing non-obvious runtime crashes, memory leaks, or intermittent bugs.",
+  "token_cost": 130
+ },
+ {
+  "id": "skill-refactoring",
+  "kind": "skill",
+  "name": "refactoring",
+  "description": "Preserves external behavior while decomposing monolithic functions, eliminating code smells, and decoupling abstractions. Use when modernizing legacy codebases, paying down tech debt, or splitting large classes.",
+  "token_cost": 120
+ },
+ {
+  "id": "skill-security-review",
+  "kind": "skill",
+  "name": "security-review",
+  "description": "Scans application code and dependency trees for OWASP Top 10 vulnerabilities, insecure deserialization, and secret leaks. Use before deploying services to staging or auditing external contributions.",
+  "token_cost": 145
+ },
+ {
+  "id": "skill-db-migration",
+  "kind": "skill",
+  "name": "db-migration",
+  "description": "Designs zero-downtime database schema migrations, column rollouts, and rollback triggers across relational databases. Use when altering active production tables, backfilling columns, or creating indexes concurrently.",
+  "token_cost": 125
+ },
+ {
+  "id": "skill-api-design",
+  "kind": "skill",
+  "name": "api-design",
+  "description": "Formulates RESTful and GraphQL API contracts with idempotent semantics, precise error payloads, and OpenAPI schemas. Use when specifying public endpoints or structuring microservice boundaries.",
+  "token_cost": 115
+ },
+ {
+  "id": "skill-data-viz",
+  "kind": "skill",
+  "name": "data-viz",
+  "description": "Selects appropriate visualization encodings and builds clean SVG, Observable Plot, or D3 charts for numeric data. Use when presenting benchmark distributions, metric trends, or statistical telemetry.",
+  "token_cost": 105
+ },
+ {
+  "id": "skill-seo-audit",
+  "kind": "skill",
+  "name": "seo-audit",
+  "description": "Audits DOM markup for OpenGraph tags, canonical URLs, semantic structure, JSON-LD schemas, and indexability issues. Use when reviewing marketing websites or optimizing landing pages for search engines.",
+  "token_cost": 100
+ },
+ {
+  "id": "skill-blog-writing",
+  "kind": "skill",
+  "name": "blog-writing",
+  "description": "Structures technical blog posts, architectural deep-dives, and tutorials with engaging hooks and technical depth. Use when explaining engineering breakthroughs, product launches, or technical concepts.",
+  "token_cost": 90
+ },
+ {
+  "id": "skill-social-media-copy",
+  "kind": "skill",
+  "name": "social-media-copy",
+  "description": "Adapts technical announcements, release highlights, and engineering milestones into punchy multi-platform social posts. Use when distributing updates across developer forums, X/Twitter, and LinkedIn.",
+  "token_cost": 75
+ },
+ {
+  "id": "skill-meeting-notes",
+  "kind": "skill",
+  "name": "meeting-notes",
+  "description": "Distills raw meeting transcripts and discussion fragments into synthesized takeaways, owner assignments, and action items. Use when processing voice transcripts or team sync notes after meetings.",
+  "token_cost": 70
+ },
+ {
+  "id": "skill-resume-writer",
+  "kind": "skill",
+  "name": "resume-writer",
+  "description": "Translates technical career history into impact-oriented achievements, quantified deliverables, and ATS-friendly resumes. Use when tailoring curriculum vitae for executive or senior engineering positions.",
+  "token_cost": 85
+ },
+ {
+  "id": "skill-dockerfile-helper",
+  "kind": "skill",
+  "name": "dockerfile-helper",
+  "description": "Optimizes multi-stage Docker builds, layer caching, non-root user sandboxing, and minimal runtime footprints. Use when containerizing new backend applications or shrinking bloated container images.",
+  "token_cost": 110
+ },
+ {
+  "id": "skill-k8s-manifests",
+  "kind": "skill",
+  "name": "k8s-manifests",
+  "description": "Authors resilient Kubernetes manifests, Helm values, and Kustomize overlays with resource limits and readiness probes. Use when preparing services for cluster deployment or configuring ingress routing.",
+  "token_cost": 125
+ },
+ {
+  "id": "skill-terraform",
+  "kind": "skill",
+  "name": "terraform",
+  "description": "Structures declarative HCL infrastructure modules with safe state management, provider versioning, and variable validation. Use when provisioning cloud environments or refactoring Terraform state.",
+  "token_cost": 120
+ },
+ {
+  "id": "skill-regex-helper",
+  "kind": "skill",
+  "name": "regex-helper",
+  "description": "Synthesizes, explains, and benchmarks regular expressions with backtracking safety across different engine dialects. Use when parsing intricate log formats, validating user input patterns, or doing complex find-and-replace.",
+  "token_cost": 85
+ },
+ {
+  "id": "skill-sql-tuning",
+  "kind": "skill",
+  "name": "sql-tuning",
+  "description": "Interprets query execution plans (EXPLAIN ANALYZE), spots sequential scans, and suggests optimal indexing strategies. Use when troubleshooting slow database queries or diagnosing lock contention.",
+  "token_cost": 130
+ },
+ {
+  "id": "skill-accessibility-audit",
+  "kind": "skill",
+  "name": "accessibility-audit",
+  "description": "Evaluates HTML interfaces against WCAG 2.1 AA standards for keyboard traversal, ARIA attributes, and color contrast. Use when auditing web interfaces before release to ensure compliance and screen-reader usability.",
+  "token_cost": 115
+ },
+ {
+  "id": "skill-i18n",
+  "kind": "skill",
+  "name": "i18n",
+  "description": "Guides internationalization architecture, pluralization rules, ICU message formats, and locale-safe datetime formatting. Use when preparing codebases for multi-language localization.",
+  "token_cost": 95
+ },
+ {
+  "id": "skill-translation",
+  "kind": "skill",
+  "name": "translation",
+  "description": "Translates technical documentation, user interface localization files, and error messages across major languages accurately. Use when generating localized language packs while maintaining technical jargon integrity.",
+  "token_cost": 85
+ },
+ {
+  "id": "skill-video-editing",
+  "kind": "skill",
+  "name": "video-editing",
+  "description": "Generates FFmpeg pipelines and Remotion script templates for video slicing, subtitling, and programmatic encoding. Use when automating screen recording processing, demo video generation, or media conversion.",
+  "token_cost": 105
+ },
+ {
+  "id": "github__create_issue",
+  "kind": "mcp_tool",
+  "name": "github__create_issue",
+  "description": "Creates a new issue in a specified GitHub repository with labels, assignees, and a markdown body. Use when logging bugs, tracking feature requests, or filing tickets directly on GitHub.",
+  "token_cost": 290
+ },
+ {
+  "id": "github__create_pull_request",
+  "kind": "mcp_tool",
+  "name": "github__create_pull_request",
+  "description": "Opens a pull request between two git branches in a GitHub repository with title and body description. Use when submitting completed work, feature branches, or hotfixes for peer review.",
+  "token_cost": 340
+ },
+ {
+  "id": "github__search_code",
+  "kind": "mcp_tool",
+  "name": "github__search_code",
+  "description": "Searches for matching code snippets across GitHub repositories using GitHub's code search syntax. Use when finding usages of an API, locating library implementations, or searching external open-source code.",
+  "token_cost": 310
+ },
+ {
+  "id": "github__list_commits",
+  "kind": "mcp_tool",
+  "name": "github__list_commits",
+  "description": "Lists recent commits for a repository or path on GitHub with SHA, author, and message details. Use when examining commit history on a remote branch or verifying whether commits have landed.",
+  "token_cost": 270
+ },
+ {
+  "id": "github__get_file_contents",
+  "kind": "mcp_tool",
+  "name": "github__get_file_contents",
+  "description": "Retrieves the raw or base64-encoded contents of a file from a GitHub repository at a specific branch or commit SHA. Use when inspecting remote files without cloning the repository locally.",
+  "token_cost": 280
+ },
+ {
+  "id": "github__merge_pull_request",
+  "kind": "mcp_tool",
+  "name": "github__merge_pull_request",
+  "description": "Merges an approved GitHub pull request using squash, rebase, or standard merge commit strategies. Use when closing out approved PRs and deploying code into the default branch.",
+  "token_cost": 260
+ },
+ {
+  "id": "github__list_pull_requests",
+  "kind": "mcp_tool",
+  "name": "github__list_pull_requests",
+  "description": "Fetches open or closed pull requests for a repository filtered by branch, state, and labels. Use when checking open PR status, discovering pending reviews, or auditing current repository activity.",
+  "token_cost": 305
+ },
+ {
+  "id": "github__add_issue_comment",
+  "kind": "mcp_tool",
+  "name": "github__add_issue_comment",
+  "description": "Posts a markdown comment onto an existing GitHub issue or pull request thread. Use when responding to reviewer comments, posting automated triage status, or updating issue stakeholders.",
+  "token_cost": 240
+ },
+ {
+  "id": "linear__create_issue",
+  "kind": "mcp_tool",
+  "name": "linear__create_issue",
+  "description": "Creates a tracking ticket on Linear within a specified team, project, cycle, and priority. Use when filing engineering tasks, user bug reports, or sprint backlog items in Linear.",
+  "token_cost": 380
+ },
+ {
+  "id": "linear__list_issues",
+  "kind": "mcp_tool",
+  "name": "linear__list_issues",
+  "description": "Retrieves issues from Linear filtered by status, assignee, team, or priority level. Use when checking active sprint workloads, listing assigned tasks, or tracking milestone progress.",
+  "token_cost": 360
+ },
+ {
+  "id": "linear__update_issue",
+  "kind": "mcp_tool",
+  "name": "linear__update_issue",
+  "description": "Modifies properties of a Linear issue such as status state, estimate, assignee, or description. Use when moving an engineering task across kanban stages or reassigning ownership.",
+  "token_cost": 350
+ },
+ {
+  "id": "linear__search_issues",
+  "kind": "mcp_tool",
+  "name": "linear__search_issues",
+  "description": "Performs full-text queries across Linear issues, comments, and project documents. Use when searching for existing tickets to avoid filing duplicates or looking up related bug history.",
+  "token_cost": 320
+ },
+ {
+  "id": "jira__create_issue",
+  "kind": "mcp_tool",
+  "name": "jira__create_issue",
+  "description": "Creates an issue, story, or bug ticket in an Atlassian Jira project with components and custom fields. Use when logging formal project tickets in enterprise environments using Jira.",
+  "token_cost": 420
+ },
+ {
+  "id": "jira__get_issue",
+  "kind": "mcp_tool",
+  "name": "jira__get_issue",
+  "description": "Fetches full metadata, transition states, description, and comments for a specific Jira issue key. Use when inspecting acceptance criteria or reading ticket specifications before coding.",
+  "token_cost": 310
+ },
+ {
+  "id": "jira__update_issue_status",
+  "kind": "mcp_tool",
+  "name": "jira__update_issue_status",
+  "description": "Executes workflow transitions on a Jira issue to change state from In Progress to Review or Done. Use when updating ticket lifecycle stages upon branch merge or deployment.",
+  "token_cost": 290
+ },
+ {
+  "id": "confluence__create_page",
+  "kind": "mcp_tool",
+  "name": "confluence__create_page",
+  "description": "Publishes a new documentation page in an Atlassian Confluence space under an optional parent page. Use when creating architectural design records, team runbooks, or onboarding docs in Confluence.",
+  "token_cost": 390
+ },
+ {
+  "id": "confluence__search_content",
+  "kind": "mcp_tool",
+  "name": "confluence__search_content",
+  "description": "Searches spaces and page bodies across Confluence using CQL queries. Use when retrieving corporate policies, internal architecture designs, or team documentation stored in Confluence.",
+  "token_cost": 330
+ },
+ {
+  "id": "notion__search",
+  "kind": "mcp_tool",
+  "name": "notion__search",
+  "description": "Searches Notion workspace pages and database entries by title and rich-text content. Use when discovering knowledge base pages, technical specs, or meeting notes in a Notion workspace.",
+  "token_cost": 310
+ },
+ {
+  "id": "notion__create_page",
+  "kind": "mcp_tool",
+  "name": "notion__create_page",
+  "description": "Creates a new Notion page within an existing parent page or database with specified block content. Use when writing meeting summaries, engineering specs, or wiki documents to Notion.",
+  "token_cost": 440
+ },
+ {
+  "id": "notion__update_page",
+  "kind": "mcp_tool",
+  "name": "notion__update_page",
+  "description": "Updates properties, tags, and cover images of an existing page or database item in Notion. Use when updating document status, changing task properties, or archiving a Notion page.",
+  "token_cost": 360
+ },
+ {
+  "id": "notion__get_block_children",
+  "kind": "mcp_tool",
+  "name": "notion__get_block_children",
+  "description": "Fetches child blocks from a Notion page or container block to inspect nested content. Use when reading section content, checklists, or callouts from an existing Notion document.",
+  "token_cost": 290
+ },
+ {
+  "id": "slack__post_message",
+  "kind": "mcp_tool",
+  "name": "slack__post_message",
+  "description": "Sends a message or rich Block Kit payload to a specified Slack public channel, private channel, or user DM. Use when broadcasting build notifications, alert summaries, or team questions.",
+  "token_cost": 340
+ },
+ {
+  "id": "slack__search_messages",
+  "kind": "mcp_tool",
+  "name": "slack__search_messages",
+  "description": "Searches historical Slack messages and shared files across channels using keywords and date filters. Use when retrieving previous team discussions, shared links, or informal decisions.",
+  "token_cost": 320
+ },
+ {
+  "id": "slack__list_channels",
+  "kind": "mcp_tool",
+  "name": "slack__list_channels",
+  "description": "Lists public and joined private channels in the connected Slack workspace with their IDs and topics. Use when discovering the appropriate Slack channel to post an announcement or alert.",
+  "token_cost": 260
+ },
+ {
+  "id": "slack__add_reaction",
+  "kind": "mcp_tool",
+  "name": "slack__add_reaction",
+  "description": "Adds an emoji reaction to a specific message in a Slack channel using timestamp and channel ID. Use when acknowledging receipt of requests or providing visual status feedback on Slack messages.",
+  "token_cost": 230
+ },
+ {
+  "id": "gmail__search_emails",
+  "kind": "mcp_tool",
+  "name": "gmail__search_emails",
+  "description": "Queries Gmail messages and threads using standard search operators like from, subject, and after. Use when searching for confirmation emails, vendor correspondence, or customer inquiries.",
+  "token_cost": 330
+ },
+ {
+  "id": "gmail__send_email",
+  "kind": "mcp_tool",
+  "name": "gmail__send_email",
+  "description": "Sends an email message to designated recipients with subject, body, and optional file attachments. Use when sending formal reports, notifications, or replies directly via email.",
+  "token_cost": 350
+ },
+ {
+  "id": "gmail__create_draft",
+  "kind": "mcp_tool",
+  "name": "gmail__create_draft",
+  "description": "Composes an email draft in Gmail without sending it immediately. Use when preparing emails for human review and final approval before dispatching.",
+  "token_cost": 310
+ },
+ {
+  "id": "google_calendar__list_events",
+  "kind": "mcp_tool",
+  "name": "google_calendar__list_events",
+  "description": "Fetches scheduled events from a Google Calendar within a specified date and time window. Use when checking schedule availability, finding upcoming meetings, or reviewing day agendas.",
+  "token_cost": 290
+ },
+ {
+  "id": "google_calendar__create_event",
+  "kind": "mcp_tool",
+  "name": "google_calendar__create_event",
+  "description": "Schedules a calendar event on Google Calendar with start time, attendees, location, and description. Use when booking meetings, reserving work blocks, or creating reminders.",
+  "token_cost": 380
+ },
+ {
+  "id": "google_drive__search_files",
+  "kind": "mcp_tool",
+  "name": "google_drive__search_files",
+  "description": "Searches files and folders in Google Drive by filename, mimeType, and full-text content. Use when locating shared documents, spreadsheets, or presentation decks in Google Drive.",
+  "token_cost": 310
+ },
+ {
+  "id": "google_drive__read_file",
+  "kind": "mcp_tool",
+  "name": "google_drive__read_file",
+  "description": "Exports or downloads the text content of a file or Google Doc from Google Drive. Use when reading cloud-stored specifications, remote PDFs, or shared team spreadsheets.",
+  "token_cost": 280
+ },
+ {
+  "id": "google_drive__upload_file",
+  "kind": "mcp_tool",
+  "name": "google_drive__upload_file",
+  "description": "Uploads a local file to a Google Drive folder with specified metadata and permissions. Use when backing up artifacts, saving reports, or sharing generated documents with team members.",
+  "token_cost": 350
+ },
+ {
+  "id": "playwright__browser_navigate",
+  "kind": "mcp_tool",
+  "name": "playwright__browser_navigate",
+  "description": "Navigates the headless browser instance to a specified URL and waits for page load state. Use when beginning web automation sessions, visiting external websites, or loading local test servers.",
+  "token_cost": 260
+ },
+ {
+  "id": "playwright__browser_click",
+  "kind": "mcp_tool",
+  "name": "playwright__browser_click",
+  "description": "Dispatches mouse click events to a DOM element matched by CSS selector, text, or accessibility role. Use when interacting with buttons, links, dropdowns, and checkboxes during web automation.",
+  "token_cost": 280
+ },
+ {
+  "id": "playwright__browser_take_screenshot",
+  "kind": "mcp_tool",
+  "name": "playwright__browser_take_screenshot",
+  "description": "Captures a full-page or element-level screenshot of the current browser page as a base64 image. Use when visually verifying UI rendering, inspecting page layout, or diagnosing UI test failures.",
+  "token_cost": 290
+ },
+ {
+  "id": "playwright__browser_fill_form",
+  "kind": "mcp_tool",
+  "name": "playwright__browser_fill_form",
+  "description": "Fills text values into form inputs and textareas matched by selectors on the active browser page. Use when completing authentication forms, search bars, or interactive input workflows.",
+  "token_cost": 320
+ },
+ {
+  "id": "playwright__browser_evaluate_script",
+  "kind": "mcp_tool",
+  "name": "playwright__browser_evaluate_script",
+  "description": "Executes arbitrary JavaScript within the browser context and returns serialized results. Use when scraping dynamic client-side state or triggering custom DOM events during automation.",
+  "token_cost": 300
+ },
+ {
+  "id": "postgres__query",
+  "kind": "mcp_tool",
+  "name": "postgres__query",
+  "description": "Executes parameterized SQL queries against a connected PostgreSQL database instance. Use when querying production records, validating data consistency, or running read-only operational queries.",
+  "token_cost": 360
+ },
+ {
+  "id": "postgres__list_tables",
+  "kind": "mcp_tool",
+  "name": "postgres__list_tables",
+  "description": "Lists all tables, views, and schemas present in the target PostgreSQL database. Use when exploring schema structure or inspecting database topology during backend development.",
+  "token_cost": 220
+ },
+ {
+  "id": "postgres__describe_table",
+  "kind": "mcp_tool",
+  "name": "postgres__describe_table",
+  "description": "Returns column definitions, data types, foreign keys, and indexes for a specific PostgreSQL table. Use when verifying schema types and constraints before writing queries or migrations.",
+  "token_cost": 280
+ },
+ {
+  "id": "supabase__execute_sql",
+  "kind": "mcp_tool",
+  "name": "supabase__execute_sql",
+  "description": "Executes SQL statements through Supabase's management API with elevated service privileges. Use when provisioning tables, setting up Row Level Security (RLS) policies, or running admin queries.",
+  "token_cost": 390
+ },
+ {
+  "id": "supabase__apply_migration",
+  "kind": "mcp_tool",
+  "name": "supabase__apply_migration",
+  "description": "Applies a versioned SQL migration file to a Supabase project and tracks migration history. Use when deploying schema alterations to staging or production Supabase environments.",
+  "token_cost": 340
+ },
+ {
+  "id": "supabase__list_buckets",
+  "kind": "mcp_tool",
+  "name": "supabase__list_buckets",
+  "description": "Lists all storage buckets and their access policies configured in a Supabase project. Use when verifying file storage configurations or managing public/private asset buckets.",
+  "token_cost": 240
+ },
+ {
+  "id": "sentry__get_issue",
+  "kind": "mcp_tool",
+  "name": "sentry__get_issue",
+  "description": "Retrieves exception stack traces, affected user counts, and tags for a specific Sentry issue ID. Use when investigating production errors, crash details, or unhandled exceptions.",
+  "token_cost": 330
+ },
+ {
+  "id": "sentry__search_issues",
+  "kind": "mcp_tool",
+  "name": "sentry__search_issues",
+  "description": "Searches unresolved Sentry issues by project, environment, release version, or error message. Use when triaging post-deployment regressions or monitoring error frequency.",
+  "token_cost": 370
+ },
+ {
+  "id": "sentry__list_project_events",
+  "kind": "mcp_tool",
+  "name": "sentry__list_project_events",
+  "description": "Returns raw recent error events and contextual payloads logged for a specific Sentry project. Use when correlating user request headers and breadcrumbs leading up to a crash.",
+  "token_cost": 350
+ },
+ {
+  "id": "stripe__list_customers",
+  "kind": "mcp_tool",
+  "name": "stripe__list_customers",
+  "description": "Lists Stripe customers filtered by email address, creation timestamp, or active status. Use when looking up user billing accounts or verifying subscriber metadata in Stripe.",
+  "token_cost": 320
+ },
+ {
+  "id": "stripe__create_refund",
+  "kind": "mcp_tool",
+  "name": "stripe__create_refund",
+  "description": "Issues a full or partial refund against a Stripe charge or payment intent with a specified reason. Use when handling customer refund requests or reversing erroneous charges.",
+  "token_cost": 340
+ },
+ {
+  "id": "stripe__list_invoices",
+  "kind": "mcp_tool",
+  "name": "stripe__list_invoices",
+  "description": "Fetches past and upcoming invoices for a Stripe customer with payment status and line items. Use when auditing billing history, verifying invoice payments, or resolving failed renewals.",
+  "token_cost": 350
+ },
+ {
+  "id": "stripe__get_payment_intent",
+  "kind": "mcp_tool",
+  "name": "stripe__get_payment_intent",
+  "description": "Retrieves the status, amount, and payment method details for a specific Stripe PaymentIntent. Use when debugging checkout failures or verifying client transaction completion.",
+  "token_cost": 290
+ },
+ {
+  "id": "figma__get_design_file",
+  "kind": "mcp_tool",
+  "name": "figma__get_design_file",
+  "description": "Downloads the document node tree, frame hierarchy, and style components from a Figma file URL. Use when extracting UI specs, layout dimensions, and design tokens for frontend implementation.",
+  "token_cost": 410
+ },
+ {
+  "id": "figma__get_node_image",
+  "kind": "mcp_tool",
+  "name": "figma__get_node_image",
+  "description": "Renders a specific node or frame from a Figma design file into a PNG or SVG image export. Use when retrieving visual reference mockups or design assets directly from Figma.",
+  "token_cost": 320
+ },
+ {
+  "id": "vercel__deploy_project",
+  "kind": "mcp_tool",
+  "name": "vercel__deploy_project",
+  "description": "Triggers a preview or production deployment build on Vercel for the current repository branch. Use when publishing staging previews or triggering automated production site releases.",
+  "token_cost": 370
+ },
+ {
+  "id": "vercel__get_deployment_logs",
+  "kind": "mcp_tool",
+  "name": "vercel__get_deployment_logs",
+  "description": "Retrieves runtime and build logs for a specific Vercel deployment ID. Use when diagnosing failed Next.js builds or investigating serverless function runtime timeouts.",
+  "token_cost": 310
+ },
+ {
+  "id": "aws__s3_list_objects",
+  "kind": "mcp_tool",
+  "name": "aws__s3_list_objects",
+  "description": "Lists objects and prefixes within an AWS S3 bucket with size and modification timestamps. Use when verifying uploaded assets, exploring bucket hierarchies, or checking backup files.",
+  "token_cost": 300
+ },
+ {
+  "id": "aws__s3_get_object",
+  "kind": "mcp_tool",
+  "name": "aws__s3_get_object",
+  "description": "Downloads the raw byte stream or text content of a specified object key from an AWS S3 bucket. Use when retrieving cloud configuration files, data exports, or stored assets from S3.",
+  "token_cost": 280
+ },
+ {
+  "id": "aws__cloudwatch_get_logs",
+  "kind": "mcp_tool",
+  "name": "aws__cloudwatch_get_logs",
+  "description": "Queries log events from AWS CloudWatch Log Groups across a specific timeframe using CloudWatch Insights. Use when diagnosing AWS Lambda executions, ECS container errors, or API Gateway logs.",
+  "token_cost": 390
+ },
+ {
+  "id": "docker__list_containers",
+  "kind": "mcp_tool",
+  "name": "docker__list_containers",
+  "description": "Lists running and stopped containers on the local or remote Docker daemon with port bindings. Use when checking containerized service status or finding container IDs for inspection.",
+  "token_cost": 270
+ },
+ {
+  "id": "docker__get_container_logs",
+  "kind": "mcp_tool",
+  "name": "docker__get_container_logs",
+  "description": "Streams standard output and standard error logs from a specified Docker container. Use when debugging container initialization failures or inspecting local microservice output.",
+  "token_cost": 290
+ },
+ {
+  "id": "kubernetes__get_pods",
+  "kind": "mcp_tool",
+  "name": "kubernetes__get_pods",
+  "description": "Lists active pods across cluster namespaces with status phase, restart counts, and node placements. Use when monitoring cluster health or identifying crashing pods.",
+  "token_cost": 310
+ },
+ {
+  "id": "kubernetes__describe_resource",
+  "kind": "mcp_tool",
+  "name": "kubernetes__describe_resource",
+  "description": "Fetches detailed status, controller events, and container specifications for a Kubernetes resource. Use when diagnosing CrashLoopBackOff states, image pull errors, or failed scheduling.",
+  "token_cost": 360
+ },
+ {
+  "id": "brave_search__web_search",
+  "kind": "mcp_tool",
+  "name": "brave_search__web_search",
+  "description": "Executes live web search queries via the Brave Search API returning structured web snippets and URLs. Use when finding recent documentation, troubleshooting new library bugs, or gathering current news.",
+  "token_cost": 330
+ },
+ {
+  "id": "fetch__fetch_url",
+  "kind": "mcp_tool",
+  "name": "fetch__fetch_url",
+  "description": "Performs an HTTP GET request to fetch remote web pages and converts the HTML into clean markdown text. Use when reading public documentation, API specifications, or online articles directly.",
+  "token_cost": 250
+ },
+ {
+  "id": "memory__store_fact",
+  "kind": "mcp_tool",
+  "name": "memory__store_fact",
+  "description": "Stores a semantic fact, user preference, or key project convention into persistent long-term memory. Use when saving architectural decisions, user preferences, or recurring instructions across sessions.",
+  "token_cost": 270
+ },
+ {
+  "id": "subagent-code-reviewer",
+  "kind": "subagent",
+  "name": "code-reviewer",
+  "description": "Autonomous subagent that systematically checks changed files against coding standards, logic bugs, and architectural consistency. Delegate to this subagent for thorough pre-merge code review passes.",
+  "token_cost": 150
+ },
+ {
+  "id": "subagent-security-auditor",
+  "kind": "subagent",
+  "name": "security-auditor",
+  "description": "Specialized subagent that traces user input paths, evaluates permission boundaries, and flags vulnerabilities across the codebase. Delegate to this subagent before deploying authentication or payments code.",
+  "token_cost": 170
+ },
+ {
+  "id": "subagent-test-writer",
+  "kind": "subagent",
+  "name": "test-writer",
+  "description": "Dedicated subagent focused on writing comprehensive unit, integration, and property-based test suites for untested code. Delegate to this subagent to improve test coverage on complex modules.",
+  "token_cost": 140
+ },
+ {
+  "id": "subagent-database-optimizer",
+  "kind": "subagent",
+  "name": "database-optimizer",
+  "description": "Expert subagent that analyzes slow query profiles, recommends relational index restructuring, and refactors ORM queries. Delegate to this subagent when addressing database latency or connection saturation.",
+  "token_cost": 160
+ },
+ {
+  "id": "subagent-technical-writer",
+  "kind": "subagent",
+  "name": "technical-writer",
+  "description": "Subagent that audits repository code and produces clear README documentation, API guides, and system architecture diagrams. Delegate to this subagent when documenting new features or refactored services.",
+  "token_cost": 130
+ },
+ {
+  "id": "subagent-ux-researcher",
+  "kind": "subagent",
+  "name": "ux-researcher",
+  "description": "Subagent specialized in auditing interface flows, spotting cognitive friction, and drafting usability test plans. Delegate to this subagent when evaluating onboarding funnels or redesigning core workflows.",
+  "token_cost": 135
+ },
+ {
+  "id": "subagent-devops-engineer",
+  "kind": "subagent",
+  "name": "devops-engineer",
+  "description": "Subagent that provisions CI/CD pipelines, configures container builds, and manages cloud infrastructure scripts. Delegate to this subagent when resolving deployment failures or automating release pipelines.",
+  "token_cost": 165
+ },
+ {
+  "id": "subagent-data-analyst",
+  "kind": "subagent",
+  "name": "data-analyst",
+  "description": "Subagent that explores structured datasets, executes statistical aggregations, and extracts operational insights. Delegate to this subagent when analyzing telemetry logs, retention metrics, or experiment results.",
+  "token_cost": 145
+ },
+ {
+  "id": "subagent-frontend-developer",
+  "kind": "subagent",
+  "name": "frontend-developer",
+  "description": "Subagent dedicated to building responsive React/Next.js components, managing client state, and integrating design tokens. Delegate to this subagent to implement UI features end-to-end.",
+  "token_cost": 155
+ },
+ {
+  "id": "subagent-sre",
+  "kind": "subagent",
+  "name": "sre",
+  "description": "Subagent focused on reliability analysis, telemetry dashboards, error budget tracking, and post-mortem incident investigation. Delegate to this subagent when investigating system outages or tuning alerts.",
+  "token_cost": 175
+ }
+]

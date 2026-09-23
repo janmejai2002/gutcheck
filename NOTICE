@@ -1,0 +1,15 @@
+gutcheck
+Copyright 2026 gutcheck contributors
+
+This product includes software and model architecture derived from Laya
+(https://github.com/NandhaKishorM/laya), Copyright ConvAI Innovations, licensed under the
+Apache License 2.0: the question/option token layout (src/gutcheck/spec.py) and the decision
+model definition (src/gutcheck/train/model.py).
+
+Model weights are NOT distributed with this repository. They are downloaded at first use from
+their original sources and remain under their own licenses:
+  - convaiinnovations/laya (Apache-2.0)
+  - OpenVINO/bge-base-en-v1.5-int8-ov, from BAAI/bge-base-en-v1.5 (MIT)
+
+"Jev" and "TypeSafe" are names of TypeSafe AI. gutcheck is an independent project and is not
+affiliated with or endorsed by TypeSafe AI; it implements a compatible request/response format.

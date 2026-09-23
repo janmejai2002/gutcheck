@@ -1,0 +1,229 @@
+{"prompt": "Describe pod `storefront-web-7bc9-4x` in Kubernetes to see why it has CrashLoopBackOff.", "needs": ["kubernetes__describe_resource"]}
+{"prompt": "Remember that our fiscal year begins on February 1st and all executive summaries must report figures in USD.", "needs": ["memory__store_fact"]}
+{"prompt": "Retrieve the runtime logs for failed Vercel deployment `dpl_7kL923` to diagnose why the Next.js serverless analytics function timed out.", "needs": ["vercel__get_deployment_logs"]}
+{"prompt": "Convert this raw CSS string to camelCase JS object for inline styling: padding: 12px 16px; margin-top: 8px;", "needs": []}
+{"prompt": "Search the web for recent discussions on PyTorch 2.6 FlashAttention compilation issues on Blackwell architecture, and summarize the community workaround.", "needs": ["brave_search__web_search"]}
+{"prompt": "Draft an email to investor-updates@fund.vc summarizing our August MRR, churn rate, and headcount additions.", "needs": ["gmail__create_draft"]}
+{"prompt": "What is the difference between broadcast join and shuffle hash join in Apache Spark?", "needs": []}
+{"prompt": "Can you help me rewrite this sentence to sound more authoritative: 'We think our tool helps teams work somewhat faster'?", "needs": []}
+{"prompt": "Create an automated script or template for our product marketing video walk-through with subtitles and transitions.", "needs": ["skill-video-editing"]}
+{"prompt": "Write a comprehensive technical blog post explaining how we scaled our WebSocket gateway to 1 million concurrent connections using Go and eBPF.", "needs": ["skill-blog-writing"]}
+{"prompt": "Look up our Linear backlog for any open bugs assigned to me in the core-services team.", "needs": ["linear__list_issues"]}
+{"prompt": "File a GitHub issue in acme/core-api titled 'Redis sentinel reconnection fails during failover' with steps to reproduce and label it 'bug'.", "needs": ["github__create_issue"]}
+{"prompt": "Log a critical bug ticket in Jira under project OPS for payment webhook delivery timeouts.", "needs": ["jira__create_issue"]}
+{"prompt": "Send a note to the general channel on Slack letting everyone know all-hands is moved to 3pm.", "needs": ["slack__post_message"]}
+{"prompt": "Delegate the complete overhaul of our customer profile settings page in Next.js to a dedicated UI builder.", "needs": ["subagent-frontend-developer"]}
+{"prompt": "Apply our new supabase migration 20260924_add_audit_triggers.sql to the staging Supabase project.", "needs": ["supabase__apply_migration"]}
+{"prompt": "Explain the concept of net revenue retention in simple terms with an example.", "needs": []}
+{"prompt": "Deploy the security auditor subagent to conduct a deep automated audit across our microservice API authentication and tenant data isolation boundaries.", "needs": ["subagent-security-auditor"]}
+{"prompt": "Check Jira ticket SEC-104 for the reported SSRF vulnerability, then create a corresponding tracking issue in our private GitHub repo acme/sec-fixes.", "needs": ["jira__get_issue", "github__create_issue"]}
+{"prompt": "Apply our versioned database migration `20260924_add_vector_cosine_ops.sql` to our production Supabase instance.", "needs": ["supabase__apply_migration"]}
+{"prompt": "Run an in-depth security audit subagent across our authentication and session validation code before we ship the enterprise SSO feature.", "needs": ["subagent-security-auditor"]}
+{"prompt": "Have the UX researcher subagent review our experiment tracking interface and formulate a usability testing script to assess cognitive load for junior data scientists.", "needs": ["subagent-ux-researcher"]}
+{"prompt": "Send a quick note in the #devops-alerts channel saying the staging database restart is finished and migrations passed.", "needs": ["slack__post_message"]}
+{"prompt": "Create an architectural design doc page in the ENG space on Confluence documenting our event-driven ingestion pipeline with Kafka.", "needs": ["confluence__create_page"]}
+{"prompt": "Execute an SQL statement on Supabase to enable Row Level Security on the `saved_dashboards` table.", "needs": ["supabase__execute_sql"]}
+{"prompt": "Create a reusable agent skill conforming to SKILL.md for auditing Tailwind v4 token regressions.", "needs": ["skill-skill-creator"]}
+{"prompt": "Write an engaging, technical blog post detailing how our architecture handled 10x traffic during Black Friday without downtime.", "needs": ["skill-blog-writing"]}
+{"prompt": "Schedule a calendar event for Friday at 10 AM for 'Chaos Engineering Simulation' and ping the team channel in Slack with the invite details.", "needs": ["google_calendar__create_event", "slack__post_message"]}
+{"prompt": "Merge pull request #142 in `data-platform/stream-worker` using a squash commit, then post a notification to the #data-deployments Slack channel.", "needs": ["github__merge_pull_request", "slack__post_message"]}
+{"prompt": "Post a notice in #product-announcements with our Block Kit formatting about the sunsetting of legacy dashboard widgets.", "needs": ["slack__post_message"]}
+{"prompt": "List the storage buckets configured on our Supabase project to confirm if `model-weights-private` is configured as non-public.", "needs": ["supabase__list_buckets"]}
+{"prompt": "Find all usages of `useShoppingCart` across the company's public and internal repos on GitHub.", "needs": ["github__search_code"]}
+{"prompt": "Look at our customer spreadsheet in clients/churn_analysis.xlsx, audit the formulas in the cohort tab, and fix the divide-by-zero errors.", "needs": ["skill-xlsx"]}
+{"prompt": "Write a test suite for this custom PyTorch dataset class using pytest, including tests for corrupted images and empty bounding box annotations.", "needs": ["skill-tdd"]}
+{"prompt": "Search our Google Drive for the architecture diagram slides of the payment gateway v2.", "needs": ["google_drive__search_files"]}
+{"prompt": "Can you inspect why pod payment-service-7f4d896f-xk9p is stuck in CrashLoopBackOff in the prod namespace?", "needs": ["kubernetes__describe_resource"]}
+{"prompt": "List the last 10 commits on the remote `production-deploy` branch in repo `data-platform/feature-server` to see if hotfix 104 was deployed.", "needs": ["github__list_commits"]}
+{"prompt": "We have an ongoing prod crash in our FastAPI scoring service. Check the recent exception stack traces in Sentry for project ml-scoring-api so we know what input caused it.", "needs": ["sentry__search_issues"]}
+{"prompt": "Create a new bug in Jira under project WEB for 'Safari 16 flexbox gap rendering glitch'.", "needs": ["jira__create_issue"]}
+{"prompt": "Our animation build script needs an FFmpeg pipeline to stitch 60 recorded PNG frames into an MP4 demo.", "needs": ["skill-video-editing"]}
+{"prompt": "Query our PostgreSQL database to check if table `data_sync_runs` exists, list all tables in the `public` schema, and inspect the foreign keys on `data_sync_runs`.", "needs": ["postgres__list_tables", "postgres__describe_table"]}
+{"prompt": "Build an interactive D3 scatter plot comparing latency (p99) against throughput (qps) for our six candidate LLM backends.", "needs": ["skill-data-viz"]}
+{"prompt": "Launch a dedicated code reviewer subagent to audit pull request branch feat/distributed-lock across all modified services for correctness and deadlocks.", "needs": ["subagent-code-reviewer"]}
+{"prompt": "Deploy a dedicated test-writing subagent to generate comprehensive tests for our cart checkout calculation utils.", "needs": ["subagent-test-writer"]}
+{"prompt": "Check the Google Calendar for next Tuesday at 3 PM and schedule a 45-minute meeting titled 'Q4 Cloud Infrastructure Budget Review' with devops-team@company.com.", "needs": ["google_calendar__create_event"]}
+{"prompt": "Write a technical deep-dive blog post explaining how we reduced our Next.js bundle size by 45%.", "needs": ["skill-blog-writing"]}
+{"prompt": "Move Jira issue FE-2045 to status 'In Review' now that the PR is open.", "needs": ["jira__update_issue_status"]}
+{"prompt": "Create an investor pitch deck with 10 slides covering problem, solution, market size, traction, and team.", "needs": ["skill-pptx"]}
+{"prompt": "Audit the landing page index.html to ensure all OpenGraph images, twitter card tags, and JSON-LD schemas are indexed properly.", "needs": ["skill-seo-audit"]}
+{"prompt": "Draft an internal engineering memo announcing our migration from Celery to Temporal for data pipeline orchestration.", "needs": ["skill-internal-comms"]}
+{"prompt": "Check the status of all pods in the `kubeflow` namespace, and post a summary of any unready pods to the #data-platform Slack channel.", "needs": ["kubernetes__get_pods", "slack__post_message"]}
+{"prompt": "We need to provision an EKS cluster with managed node groups in Terraform. Help me structure the HCL modules and outputs with proper remote state locking.", "needs": ["skill-terraform"]}
+{"prompt": "Scan our recent commits in auth-service for any hardcoded JWT secrets, private keys, or exposed service account tokens before we tag the release.", "needs": ["skill-security-review"]}
+{"prompt": "Check the Linear backlog to see if anyone logged a ticket about invoice PDF download links expiring too quickly.", "needs": ["linear__search_issues"]}
+{"prompt": "Can you explain what happens under the hood when a Python generator yields values?", "needs": []}
+{"prompt": "Could you suggest a few catchy headline ideas for our upcoming AI invoice parsing product launch?", "needs": []}
+{"prompt": "Check recent error events and client user agent breadcrumbs on Sentry project `web-dashboard`.", "needs": ["sentry__list_project_events"]}
+{"prompt": "Look up our Google Calendar schedule for tomorrow and send a summary email to my assistant with the free blocks.", "needs": ["google_calendar__list_events", "gmail__send_email"]}
+{"prompt": "Review my updated resume focusing on senior frontend staff accomplishments and quantified performance wins.", "needs": ["skill-resume-writer"]}
+{"prompt": "Find any unresolved Sentry crashes mentioning 'deadlock detected' in our production api-gateway over the past 24 hours.", "needs": ["sentry__search_issues"]}
+{"prompt": "Search my work Gmail inbox for invoices or receipt emails from 'RunPod' or 'Lambda Labs' received this month.", "needs": ["gmail__search_emails"]}
+{"prompt": "Write a regex to extract timestamp, worker ID, and floating point loss values from this custom C++ inference log format.", "needs": ["skill-regex-helper"]}
+{"prompt": "Draft a technical deep-dive blog post on our real-time feature store migration, then adapt the key findings into a punchy 3-post LinkedIn and X thread for launch day.", "needs": ["skill-blog-writing", "skill-social-media-copy"]}
+{"prompt": "Evaluate `window.performance.getEntriesByType('navigation')[0].domContentLoadedEventEnd` on http://localhost:3000.", "needs": ["playwright__browser_navigate", "playwright__browser_evaluate_script"]}
+{"prompt": "Verify the weights exist in `s3://company-ml-model-registry-prod/v2.4/`, then write a production Kubernetes deployment manifest with GPU tolerations and memory requests for model v2.4.", "needs": ["aws__s3_list_objects", "skill-k8s-manifests"]}
+{"prompt": "Check the cloudwatch group for /ecs/order-processor between 14:00 and 14:30 UTC and see if there are any connection timeout errors.", "needs": ["aws__cloudwatch_get_logs"]}
+{"prompt": "Our analytics query on clickhouse is taking 2 minutes. Wait, does Postgres handle hyperloglog better than Redis?", "needs": []}
+{"prompt": "Scan our public pricing page markup to check if our typography, spacing tokens, and color contrast look amateurish.", "needs": ["skill-frontend-design"]}
+{"prompt": "Search Confluence for our internal brand guidelines on secondary button hover states.", "needs": ["confluence__search_content"]}
+{"prompt": "Audit the web dashboard markup for WCAG 2.1 compliance, then refine the component styling tokens and layout hierarchy to meet modern UI standards.", "needs": ["skill-accessibility-audit", "skill-frontend-design"]}
+{"prompt": "We have an unexplained memory leak in our Ray data worker processes after processing 10,000 batches. Walk me through a systematic isolation and heap profiling plan.", "needs": ["skill-debugging"]}
+{"prompt": "Write Terraform modules to provision an Amazon EKS cluster with managed GPU node groups (g5.2xlarge instances) and cluster autoscaler permissions.", "needs": ["skill-terraform"]}
+{"prompt": "Process the transcript from our AI safety committee sync into executive meeting minutes and save it as a new page in Notion under the 'Governance' database.", "needs": ["skill-meeting-notes", "notion__create_page"]}
+{"prompt": "Is gradient checkpointing useful for training large neural networks when GPU VRAM is the primary bottleneck?", "needs": []}
+{"prompt": "Can you explain what gross margin versus operating margin measures in SaaS?", "needs": []}
+{"prompt": "Approve and merge pull request #402 on repo acme/storefront using squash and merge.", "needs": ["github__merge_pull_request"]}
+{"prompt": "Fetch the Figma design file node tree for our data observability monitoring dashboard at URL `https://figma.com/file/xyz123/DataOps-Dashboard`.", "needs": ["figma__get_design_file"]}
+{"prompt": "Write a standardized REST API spec for our bulk export endpoints with cursor-based pagination and strict RFC 7807 error responses.", "needs": ["skill-api-design"]}
+{"prompt": "Search Google Drive for our pitch deck template and send the link in an email to our new marketing lead.", "needs": ["google_drive__search_files", "gmail__send_email"]}
+{"prompt": "Inspect the Supabase project configuration and execute an SQL statement to set up Row Level Security (RLS) on our new `user_embeddings` table.", "needs": ["supabase__execute_sql"]}
+{"prompt": "Store the decision that all Kafka event streams must use schema registry v2 with Avro format into our persistent project memory.", "needs": ["memory__store_fact"]}
+{"prompt": "Browse our test site with Playwright, submit the demo request form with test data, and snap a screenshot of the confirmation modal.", "needs": ["playwright__browser_navigate", "playwright__browser_fill_form", "playwright__browser_take_screenshot"]}
+{"prompt": "How do B2B companies normally calculate Customer Acquisition Cost (CAC)?", "needs": []}
+{"prompt": "Check our AWS S3 bucket `company-web-assets` to list all PNGs in the /hero-illustrations folder.", "needs": ["aws__s3_list_objects"]}
+{"prompt": "Search Confluence for the 'CDC Debezium Pipeline Architecture' document, extract the Kafka topic conventions, and publish an updated troubleshooting runbook page in the Data Engineering space.", "needs": ["confluence__search_content", "confluence__create_page"]}
+{"prompt": "Fetch the web documentation from https://datatracker.ietf.org/doc/html/rfc9110 and extract the section on idempotent HTTP methods.", "needs": ["fetch__fetch_url"]}
+{"prompt": "Store the fact that Sam prefers pnpm over npm and prefers Tailwind utility classes sorted with Prettier.", "needs": ["memory__store_fact"]}
+{"prompt": "Automate a headless browser to fill out the user registration form on /signup with test inputs and click Submit.", "needs": ["playwright__browser_navigate", "playwright__browser_fill_form", "playwright__browser_click"]}
+{"prompt": "Retrieve the remote package.json file directly from GitHub on branch release-2.1 without cloning.", "needs": ["github__get_file_contents"]}
+{"prompt": "Fetch the payment intent `pi_3MtwL2eZvKYlo2C` from Stripe to investigate why the transaction failed during checkout.", "needs": ["stripe__get_payment_intent"]}
+{"prompt": "Merge approved PR #88 in acme/billing using the squash strategy now that CI is green.", "needs": ["github__merge_pull_request"]}
+{"prompt": "Inspect Stripe payment intent pi_3M19028 to see why 3D Secure verification failed on checkout.", "needs": ["stripe__get_payment_intent"]}
+{"prompt": "Draft an executive briefing slide deck summarizing the accuracy gains, latency reduction, and monthly inference cost of our new quantized translation model for tomorrow's leadership sync.", "needs": ["skill-pptx"]}
+{"prompt": "Update Linear issue ENG-892 to move its state to 'In Review' and set the estimate to 3 points.", "needs": ["linear__update_issue"]}
+{"prompt": "Build an HTML5 canvas visualizer that renders a real-time 2D animated t-SNE projection of high-dimensional embedding clusters.", "needs": ["skill-canvas-design"]}
+{"prompt": "Build a PowerPoint presentation deck summarizing our Kubernetes cloud migration progress, cost savings, and remaining Q4 milestones for leadership.", "needs": ["skill-pptx"]}
+{"prompt": "Could you write a regex to match IPv4 addresses with optional CIDR prefix, making sure it won't cause catastrophic backtracking?", "needs": ["skill-regex-helper"]}
+{"prompt": "Translate our customer welcome survey questions into French, German, and Spanish without mangling our product terminology.", "needs": ["skill-translation"]}
+{"prompt": "Pull the training run metrics from s3://mlops-telemetry/exp-404/summary.json and plot an SVG chart showing validation loss versus training loss across epochs.", "needs": ["aws__s3_get_object", "skill-data-viz"]}
+{"prompt": "Help me draft a prompt for an agent to manage my email inbox.", "needs": []}
+{"prompt": "Search Slack for any mentions of 'stripe webhook signature failure' from this morning to see who first noticed it.", "needs": ["slack__search_messages"]}
+{"prompt": "look at sentry issue PROD-8821 and file a linear bug for the platform squad with the stack trace", "needs": ["sentry__get_issue", "linear__create_issue"]}
+{"prompt": "Add a thumbs-up emoji reaction to the deployment alert message at timestamp 1711200000 in #frontend-ops.", "needs": ["slack__add_reaction"]}
+{"prompt": "List all public Slack channels in the workspace to see if there is a dedicated `#ml-alerts` or `#pipeline-monitoring` channel.", "needs": ["slack__list_channels"]}
+{"prompt": "Render an interactive WebGL particle network simulation inside the hero section on CanvasHero.tsx.", "needs": ["skill-canvas-design"]}
+{"prompt": "How do startup founders typically allocate equity among early non-founder hires?", "needs": []}
+{"prompt": "Look up our scheduled product sync on Google Calendar for today to see if design attendees accepted.", "needs": ["google_calendar__list_events"]}
+{"prompt": "Search S3 for our evaluation benchmark run `s3://evals-prod/2026-09-20/results.json`, download it, and generate an executive PowerPoint presentation summarizing model performance.", "needs": ["aws__s3_get_object", "skill-pptx"]}
+{"prompt": "Draft an internal engineering memo to the team explaining the deprecation of Redux in favor of Zustand.", "needs": ["skill-internal-comms"]}
+{"prompt": "Query our Postgres database to find how many active workspaces have more than 50 seats assigned.", "needs": ["postgres__query"]}
+{"prompt": "Download the raw JSON theme configuration `theme-dark.json` directly from AWS S3 bucket `app-config-store`.", "needs": ["aws__s3_get_object"]}
+{"prompt": "How does epoll differ from select under high socket concurrency?", "needs": []}
+{"prompt": "Fetch the unhandled exception details for issue ML-API-842 from Sentry, then draft a bug report on Linear under team DATA with urgent priority.", "needs": ["sentry__get_issue", "linear__create_issue"]}
+{"prompt": "Check our AWS CloudWatch logs for API gateway timeouts, correlate the errors with Sentry issue events, and post an incident summary to Slack #eng-incidents.", "needs": ["aws__cloudwatch_get_logs", "sentry__search_issues", "slack__post_message"]}
+{"prompt": "Search our GitHub org's repos to find everywhere we are importing the deprecated v1 auth middleware.", "needs": ["github__search_code"]}
+{"prompt": "List all open pull requests on the acme/infra repo that have the 'needs-rebase' label.", "needs": ["github__list_pull_requests"]}
+{"prompt": "Audit our new landing page at https://trysolokit.com/pricing for missing OpenGraph tags and structured metadata.", "needs": ["skill-seo-audit"]}
+{"prompt": "What is the difference between a sparse categorical crossentropy and standard categorical crossentropy loss in Keras?", "needs": []}
+{"prompt": "Search Linear for any existing tickets mentioning 'avatar image blur' or 'gravatar fallback'.", "needs": ["linear__search_issues"]}
+{"prompt": "Why does Jira feel so sluggish compared to Linear when managing sprint boards?", "needs": []}
+{"prompt": "Can you explain why we should use Parquet instead of CSV for storing multi-terabyte analytical data?", "needs": []}
+{"prompt": "Check Stripe for any recent charges for customer alex@startup.io and issue a full refund for their duplicate renewal.", "needs": ["stripe__list_customers", "stripe__create_refund"]}
+{"prompt": "How do goroutines get scheduled across OS threads when doing blocking syscalls?", "needs": []}
+{"prompt": "Run a query on our Postgres database to see how many users currently have `theme = 'dark'` set.", "needs": ["postgres__query"]}
+{"prompt": "Check what channels we have in Slack related to platform alerts so I know where to wire the Prometheus alerts.", "needs": ["slack__list_channels"]}
+{"prompt": "Could you explain what a phantom stock plan is and why private companies use them?", "needs": []}
+{"prompt": "Scaffold a brand new custom agent skill for running automated Apache Spark cluster health checks according to the SKILL.md specification.", "needs": ["skill-skill-creator"]}
+{"prompt": "Check our production error rate on Sentry, find the latest payment checkout crash, and file an urgent issue on GitHub for the team.", "needs": ["sentry__get_issue", "github__create_issue"]}
+{"prompt": "Deploy the latest commit on our `feature/dashboard-v3` branch to Vercel and return the preview deployment URL.", "needs": ["vercel__deploy_project"]}
+{"prompt": "What is the difference between optimistic locking and pessimistic locking in relational databases?", "needs": []}
+{"prompt": "Draft an internal company email announcing the rollout of our new design token library next Tuesday.", "needs": ["gmail__create_draft"]}
+{"prompt": "Create an atomic commit plan with conventional commit messages for my staged changes in the components/ folder.", "needs": ["skill-git-commit-helper"]}
+{"prompt": "Remember that our team standardizes on timezone-aware UTC timestamps with microsecond precision in all new Parquet schemas.", "needs": ["memory__store_fact"]}
+{"prompt": "Can you refactor this 300-line data ingestion script to decouple the parquet batch writer from the Kafka consumer logic?", "needs": ["skill-refactoring"]}
+{"prompt": "Write a Vitest and Playwright test suite for the multi-step onboarding wizard in components/Onboarding/.", "needs": ["skill-webapp-testing"]}
+{"prompt": "Read the local file `configs/pipeline.yaml` and explain what the batch_size setting is doing.", "needs": []}
+{"prompt": "Use Playwright to navigate to our internal Airflow web UI at `http://airflow.internal:8080`, click into the `nightly_feature_aggregate` DAG, and take a screenshot of the grid view.", "needs": ["playwright__browser_navigate", "playwright__browser_click", "playwright__browser_take_screenshot"]}
+{"prompt": "Fetch the raw text from the file s3://acme-prod-configs/gateway/env.production in our AWS bucket.", "needs": ["aws__s3_get_object"]}
+{"prompt": "Fetch the live copy from our competitor's pricing page at https://competitor.io/pricing so we can compare tier inclusions.", "needs": ["fetch__fetch_url"]}
+{"prompt": "Write an apology email to a VIP customer whose account was temporarily suspended due to an automated fraud false alarm.", "needs": []}
+{"prompt": "Find the last 5 commits on the marketing-redesign branch on GitHub to see what copy updates were pushed.", "needs": ["github__list_commits"]}
+{"prompt": "Build a custom TypeScript Model Context Protocol server exposing our local Storybook components as tools.", "needs": ["skill-mcp-builder"]}
+{"prompt": "Fetch the Hugging Face model documentation page for `deepseek-ai/DeepSeek-V3` and extract the recommended vLLM tensor-parallel configuration.", "needs": ["fetch__fetch_url"]}
+{"prompt": "Add a thumbs-up reaction to message 1727142800.001200 in the #releases Slack channel to acknowledge the deployment.", "needs": ["slack__add_reaction"]}
+{"prompt": "Scrape the latest public API reference from `https://docs.anthropic.com/en/api/messages` so we have the exact JSON schema for tool use parameters.", "needs": ["fetch__fetch_url"]}
+{"prompt": "How does Next.js incremental static regeneration handle stale cache invalidation under high traffic?", "needs": []}
+{"prompt": "Write an end-to-end integration test using Playwright and Vitest to verify that our CSV file upload widget successfully renders the preview data table.", "needs": ["skill-webapp-testing"]}
+{"prompt": "Search our Google Drive for the shared 'Q4 Checkout Redesign Assets.pdf' and download its contents.", "needs": ["google_drive__search_files", "google_drive__read_file"]}
+{"prompt": "check our active containers on the staging host to see if the redis replica is up and which ports it bound", "needs": ["docker__list_containers"]}
+{"prompt": "Search Notion for the notes from last week's 'ML Infrastructure Quarterly Planning' meeting.", "needs": ["notion__search"]}
+{"prompt": "Look at the commit history on branch feat/checkout-v2 in the acme/storefront GitHub repo.", "needs": ["github__list_commits"]}
+{"prompt": "What is the computational complexity of running matrix multiplication of two dense matrices of shape (M, K) and (K, N)?", "needs": []}
+{"prompt": "Audit our new user-facing analytics portal to check whether the color scheme, logo spacing, and typography comply with our brand guidelines.", "needs": ["skill-brand-guidelines"]}
+{"prompt": "Why do some people prefer HubSpot over Salesforce for early stage sales?", "needs": []}
+{"prompt": "What is a reasonable payback period on CAC for SMB versus enterprise software?", "needs": []}
+{"prompt": "Look up our active Slack channels, find #ops-alerts, and post the weekly uptime report snippet.", "needs": ["slack__list_channels", "slack__post_message"]}
+{"prompt": "Check the public storage buckets configured in our Supabase project to ensure user uploads aren't publicly writable.", "needs": ["supabase__list_buckets"]}
+{"prompt": "Create an automated visual dashboard on an HTML5 canvas showing our daily active user funnel with smooth transitions.", "needs": ["skill-canvas-design"]}
+{"prompt": "Search our CloudWatch logs for log group `/aws/amplify/web` to see SSR render errors from the past 2 hours.", "needs": ["aws__cloudwatch_get_logs"]}
+{"prompt": "Review this draft release note, parse the recent git commits, and produce a polished customer-facing changelog.", "needs": ["skill-changelog-generator"]}
+{"prompt": "Take our launch announcement bullet points and turn them into three snappy posts for Twitter and a longer founder perspective for LinkedIn.", "needs": ["skill-social-media-copy"]}
+{"prompt": "Retrieve past invoices for Stripe customer `cus_N948123` to audit whether they were correctly billed for overage inference API tokens.", "needs": ["stripe__list_invoices"]}
+{"prompt": "Explain the difference between bagging and boosting ensemble methods in machine learning.", "needs": []}
+{"prompt": "Search our Notion docs for the customer refund policy and tell me the standard approval threshold for enterprise tiers.", "needs": ["notion__search", "notion__get_block_children"]}
+{"prompt": "List the files stored in the S3 bucket `s3://company-ml-model-registry-prod/v2.4/` to verify all tensor weights and tokenizer files uploaded cleanly.", "needs": ["aws__s3_list_objects"]}
+{"prompt": "Search Linear for open bugs tagged 'data-sync', retrieve the details for ticket ENG-412, and post the ticket status into the #data-eng Slack channel.", "needs": ["linear__search_issues", "slack__post_message"]}
+{"prompt": "Look up issue JAVASCRIPT-38A in Sentry, read the stack trace, and submit a fix via PR to frontend-web branch fix/null-cart.", "needs": ["sentry__get_issue", "github__create_pull_request"]}
+{"prompt": "Search the web for the latest European AI Act compliance requirements for enterprise SaaS analytics providers.", "needs": ["brave_search__web_search"]}
+{"prompt": "Draft an email to billing@cloudvendor.com asking for an enterprise discount on our data egress commitment.", "needs": ["gmail__create_draft"]}
+{"prompt": "Check our S3 bucket acme-data-backups and list everything under the daily/2026-09/ prefix to confirm last night's dump landed.", "needs": ["aws__s3_list_objects"]}
+{"prompt": "Search our Gmail inbox for emails from AWS Support regarding our RDS quota increase request.", "needs": ["gmail__search_emails"]}
+{"prompt": "Can you debug this intermittent race condition where user avatars flicker between loading skeletons on navigation?", "needs": ["skill-debugging"]}
+{"prompt": "Can you write a clean SQL query with window functions to compute a 7-day rolling average of API latency per endpoint?", "needs": []}
+{"prompt": "Can you check our Stripe invoices to see if invoice in_1048593 was paid or if it failed past retries?", "needs": ["stripe__list_invoices"]}
+{"prompt": "Can you explain the rule of 40 in SaaS and how growth rate interacts with free cash flow margin?", "needs": []}
+{"prompt": "File a bug issue on GitHub repository `ml-pipeline/airflow-dags` detailing the Airflow DAG deadlock observed on the daily midnight partition backfill.", "needs": ["github__create_issue"]}
+{"prompt": "Can you design a zero-downtime schema migration to rename column `avatar_url` to `profile_image_url` on our users table?", "needs": ["skill-db-migration"]}
+{"prompt": "Draft a formal non-disclosure agreement in Word using standard Delaware mutual NDA language for an enterprise prospect.", "needs": ["skill-docx"]}
+{"prompt": "Draft an email to `data-partners@vendor.com` requesting API rate limit elevation from 500 req/sec to 2000 req/sec for our batch indexing job.", "needs": ["gmail__create_draft"]}
+{"prompt": "Search our GitHub organization repositories for any occurrences of the deprecated `spark.sql.execution.arrow.enabled` configuration.", "needs": ["github__search_code"]}
+{"prompt": "Show me the running Docker containers on my machine to see if our local mock backend container is up.", "needs": ["docker__list_containers"]}
+{"prompt": "Fetch the remote `schema.proto` from the `data-contracts` repo on GitHub, and verify whether our local protobuf definitions match it.", "needs": ["github__get_file_contents"]}
+{"prompt": "Can you explain the mathematical difference between L1 and L2 regularization in logistic regression?", "needs": []}
+{"prompt": "Search our Gmail for the Stripe billing notification, look up the payment intent in Stripe to check the charge amount, and record the invoice details in Notion.", "needs": ["gmail__search_emails", "stripe__get_payment_intent", "notion__create_page"]}
+{"prompt": "Check what PRs are currently waiting on review on our frontend monorepo on GitHub.", "needs": ["github__list_pull_requests"]}
+{"prompt": "Search Confluence for our DR runbook and tell me what the RTO target is for Postgres failover.", "needs": ["confluence__search_content"]}
+{"prompt": "Send a warning alert to Slack channel `#data-ops` notifying everyone that the nightly dbt transformation run is delayed by 45 minutes.", "needs": ["slack__post_message"]}
+{"prompt": "Publish an architectural record page in Confluence under the Frontend space documenting our state management migration.", "needs": ["confluence__create_page"]}
+{"prompt": "We need a zero-downtime migration to rename the legacy customer_ident column to tenant_id on the high-throughput events table.", "needs": ["skill-db-migration"]}
+{"prompt": "Search the web to see what standard discount rates enterprise buyers expect on 3-year upfront contracts.", "needs": ["brave_search__web_search"]}
+{"prompt": "Can you check my math on this? If we have a dataset of 10 million rows and each row has 128 float32 dimensions, how many gigabytes is the raw uncompressed matrix?", "needs": []}
+{"prompt": "Inspect our Supabase storage buckets and check if the 'user-receipts' bucket has public access accidentally enabled.", "needs": ["supabase__list_buckets"]}
+{"prompt": "Drop a comment on GitHub PR #142 summarizing that the integration tests passed locally and requesting backend lead approval.", "needs": ["github__add_issue_comment"]}
+{"prompt": "Find the discussion in Slack about the broken Redshift data pipeline, summarize the root cause, and log a high-priority bug in Linear.", "needs": ["slack__search_messages", "linear__create_issue"]}
+{"prompt": "Check AWS CloudWatch logs for the Lambda function `/aws/lambda/feature-pipeline-trigger` over the last hour to see if API throttling occurred.", "needs": ["aws__cloudwatch_get_logs"]}
+{"prompt": "Look up ticket INFRA-402 in Jira, read what acceptance criteria we agreed on for the redis cluster, then update the ticket status to In Progress.", "needs": ["jira__get_issue", "jira__update_issue_status"]}
+{"prompt": "Design a clean REST API specification with OpenAPI 3.1 definitions for our new online model prediction endpoint, including batch prediction and error schemas.", "needs": ["skill-api-design"]}
+{"prompt": "Grab the standard error logs from the docker container `local-api-stub`.", "needs": ["docker__get_container_logs"]}
+{"prompt": "Audit the landing page HTML in index.html to ensure all form inputs have accessible labels and screen reader announcements.", "needs": ["skill-accessibility-audit"]}
+{"prompt": "Audit our data documentation site for SEO indexability, missing OpenGraph tags, and canonical link definitions.", "needs": ["skill-seo-audit"]}
+{"prompt": "Check Kubernetes pods in namespace 'feature-pipeline' to see which batch jobs are currently running or failing.", "needs": ["kubernetes__get_pods"]}
+{"prompt": "Deploy the latest commit on branch staging-refresh to Vercel and grab the build logs if it fails.", "needs": ["vercel__deploy_project", "vercel__get_deployment_logs"]}
+{"prompt": "We need to scaffold a new Model Context Protocol server in TypeScript that wraps our internal Nomad job scheduler API.", "needs": ["skill-mcp-builder"]}
+{"prompt": "The worker pod `feature-extractor-6d9` keeps failing in staging. Inspect its Kubernetes pod events, diagnose why the image crashed, and post an update to the #ml-ops channel.", "needs": ["kubernetes__describe_resource", "slack__post_message"]}
+{"prompt": "Write an OpenAPI 3.1 specification for our new `/api/v2/notifications` subscription endpoints with idempotent POSTs.", "needs": ["skill-api-design"]}
+{"prompt": "What is the difference between an unvested stock option and an exercised share?", "needs": []}
+{"prompt": "Check Jira for ticket GROWTH-112, read the acceptance criteria, and update its status to In Review.", "needs": ["jira__get_issue", "jira__update_issue_status"]}
+{"prompt": "Fetch the UI layout from our Figma analytics file, inspect the design tokens, and deploy the frontend developer subagent to implement the dashboard components.", "needs": ["figma__get_design_file", "subagent-frontend-developer"]}
+{"prompt": "Extract the key metrics from our investor update PDF in reports/q2_investor_report.pdf and generate an executive slide deck.", "needs": ["skill-pdf", "skill-pptx"]}
+{"prompt": "Why does setting random seeds in PyTorch, Python random, and NumPy still sometimes yield non-deterministic results on GPU?", "needs": []}
+{"prompt": "Fetch the raw contents of `docker-compose.monitoring.yml` from GitHub repo `org/ml-infra` on the `staging` branch.", "needs": ["github__get_file_contents"]}
+{"prompt": "Deploy a test writer subagent to generate unit and integration tests with edge-case mocks for our new OAuth2 token revocation service.", "needs": ["subagent-test-writer"]}
+{"prompt": "What is the CSS property to truncate multi-line text with an ellipsis?", "needs": []}
+{"prompt": "What is the primary purpose of a Section 83(b) election when purchasing founder shares?", "needs": []}
+{"prompt": "Pull customer cus_8f3K9v from Stripe to check their default payment method and active subscription status.", "needs": ["stripe__list_customers"]}
+{"prompt": "Upload our compiled monthly financial report monthly_report_aug.pdf into our Shared Operations folder on Google Drive.", "needs": ["google_drive__upload_file"]}
+{"prompt": "Engage the SRE subagent to review our latency SLO alerts, error budget burn rates, and incident runbooks for the real-time inference cluster.", "needs": ["subagent-sre"]}
+{"prompt": "We need to split our monolithic 2,000-line order routing handler into smaller decoupled domain services without breaking behavior.", "needs": ["skill-refactoring"]}
+{"prompt": "Have the database optimizer subagent inspect why our aggregation query on `analytics.page_events` takes 14 seconds, and have it recommend composite indexes.", "needs": ["subagent-database-optimizer"]}
+{"prompt": "Review this 400-line git diff of our connection pooling overhaul. Focus on concurrency race conditions, leak traps, and error propagation.", "needs": ["skill-code-review"]}
+{"prompt": "Build a comprehensive sales commission model in Excel with tiered quotas, accelerator multipliers, and clawback clauses.", "needs": ["skill-xlsx"]}
+{"prompt": "Search our Drive for 'data_retention_policy_2025.pdf', extract its compliance guidelines, and compile an internal memo notifying the data engineering team about table pruning.", "needs": ["google_drive__search_files", "google_drive__read_file", "skill-internal-comms"]}
+{"prompt": "Generate a clean interactive SVG chart showing our monthly active users versus churn percentage for our internal dashboard.", "needs": ["skill-data-viz"]}
+{"prompt": "Take this raw customer churn CSV data from our training split and compute the distribution quartiles, feature correlations, and outlier summary.", "needs": ["subagent-data-analyst"]}
+{"prompt": "Send an email via Gmail to the design lead with the subject 'Staging URL' containing our latest preview link.", "needs": ["gmail__send_email"]}
+{"prompt": "We have an intermittent bug where background queue workers stop processing jobs after 3 days without crashing or throwing errors. Guide me through root cause diagnosis.", "needs": ["skill-debugging"]}
+{"prompt": "Explain the difference between inbound lead generation and account-based marketing (ABM).", "needs": []}
+{"prompt": "Check the calendar to see if the conference room is free at 2pm on Friday and schedule our quarterly business review.", "needs": ["google_calendar__list_events", "google_calendar__create_event"]}
+{"prompt": "Find recent customer support chats in Slack where users complained about the new dark mode toggle.", "needs": ["slack__search_messages"]}
