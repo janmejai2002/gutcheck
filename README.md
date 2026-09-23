@@ -290,11 +290,14 @@ flowchart TB
 
 ## Roadmap
 
+Details, measurements and concrete next steps for each item: [`docs/ROADMAP.md`](docs/ROADMAP.md).
+
 - [ ] **SSD models on the NPU.** Mamba-2 (state space duality) models keep a fixed-size memory of an entire session
       at constant cost, where the decision model reads at most 512 tokens. Plan: session-aware leasing first
       ("now do the same for the Q3 file"), then a local draft model for when gutcheck is unsure, then hand-over
       notes between agents. OpenVINO merged native Mamba-2 support on 2026-09-21; NPU support is unverified.
-- [ ] Deep lease router with results on the test split.
+- [ ] **Deep lease router**: after one epoch its validation loss was 0.478 vs 0.653 for the best head-only router;
+      the run stopped for memory on a 16 GB laptop. Rerun instructions and a memory fix are in the roadmap.
 - [ ] Prebuilt model packages on the Hugging Face Hub (no PyTorch needed at all).
 - [ ] PyPI release.
 - [ ] DirectML fix; community reports for CUDA, QNN and CoreML.
